@@ -24,6 +24,7 @@ body {
     font-family: 'Ubuntu', 'sans-serif';
     background-color: var(--bg-light);
     color: var(--text-secondary);
+    overflow-x: hidden;
 }
 
 .container {
@@ -129,6 +130,18 @@ li {
     color: var(--text-white);
 }
 
+.hamburger {
+    margin-left: auto;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--text-white);
+    display: none;
+    font-size: 1.5rem;
+}
+
 /* content */
 
 .content {
@@ -164,6 +177,14 @@ li {
 
     .container {
         padding: 0 1rem;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .rt {
+        display: none;
     }
 }
 
