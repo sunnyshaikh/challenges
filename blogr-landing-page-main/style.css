@@ -1,0 +1,168 @@
+/* variables */
+
+:root {
+    --bg-light: #fafafa;
+    --text-white: #fff;
+    --text-light: hsl(240, 2%, 79%);
+    --text-primary: hsl(208, 49%, 24%);
+    --text-secondary: hsl(207, 13%, 34%);
+
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+}
+
+/* default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Ubuntu', 'sans-serif';
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+}
+
+.container {
+    position: relative;
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: .75rem 2rem;
+    border-radius: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: var(--text-white);
+    background: none;
+    font-weight: bold;
+}
+
+.btn-light {
+    color: var(--light-red);
+    background: var(--text-white);
+}
+
+.btn-outline-light {
+    border: 1.6px solid #fff;
+}
+
+/* section 1 */
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to right, var(--very-light-red), var(--light-red));
+    border-radius: 0 0 0 8rem;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.8);
+    margin-left: 20rem;
+}
+
+.section1 .container {
+    height: calc(100% - 6rem);
+    z-index: 2;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.rt {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.dropdown-menu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li {
+    margin: 0 1rem; 
+    color: var(--bg-light);
+}
+
+.dropdown-menu li span {
+    margin-left: .25rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+/* content */
+
+.content {
+    margin-top: -4rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .intro-title {
+    text-align: center;
+    color: var(--text-white);
+    font-size: 3.6rem;
+    font-family: 'Overpass', 'Ubuntu', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.content .buttons {
+    margin-top: 2rem;
+}
+
+.content .desc {
+    color: var(--bg-light)
+}
+
+
+
+
+
+
+
+
+
