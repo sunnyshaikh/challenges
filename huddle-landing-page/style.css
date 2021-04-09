@@ -174,6 +174,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 700px;
+    max-width: 94%;
     border-radius: 10px;
     box-shadow: 0 5px 12px rgba(0,0,0,.1);
     margin-bottom: -6rem;
@@ -185,6 +186,7 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
 
 .jumbotron .btn {
     margin-top: 2rem;
@@ -248,4 +250,65 @@ span .fas {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 560px) {
+    .intro-title {
+        font-size: 1.7rem;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-img {
+        margin-top: 2rem;
+    }
+
+    .jumbotron .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .jumbotron h1 {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .jumbotron button {
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .info {
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .card .img {
+        width: 100%
+    }
+
+    .card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
 }
