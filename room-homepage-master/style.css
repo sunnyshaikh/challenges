@@ -1,0 +1,165 @@
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: 'Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    color: var(--dark-gray);
+    line-height: 20px;
+}
+
+h1, h3 {
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: calc(7vmin - 2px);
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+nav {
+    position: absolute;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--white);
+}
+
+button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.bars {
+    margin-top: -5px;
+    font-size: 18px;
+    color: var(--white);
+    margin-right: 3rem;
+    display: none;
+}
+
+a.logo {
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+li {
+    padding: 1rem;
+}
+
+li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.top {
+    height: 66vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.image {
+    flex: 0.6;
+}
+
+.top .heading {
+    position: relative;
+    padding: 5rem 4rem;
+    flex: 0.4;
+}
+
+.top h3 {
+    margin-top: 2rem;
+}
+
+.slider {
+    position: absolute;
+    background: var(--black);
+    bottom: 0;
+    left: 0;
+    width: 35.75%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider button {
+    color:var(--very-dark-gray);
+    font-size: 30px;
+    margin: 0 1rem;
+}
+
+.bottom {
+    display: flex;
+    /* align-items: center; */
+}
+
+.bottom .heading {
+    padding: 4rem 3rem;
+}
+
+.bottom img {
+    height: 100%;
+}
+
+@media screen and (max-width: 560px){
+    .top, .bottom {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .image,
+    .top .heading {
+        flex: 1;
+    }
+
+    .bottom img {
+        width: 100%;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+
