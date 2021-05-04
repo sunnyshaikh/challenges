@@ -10,9 +10,10 @@ html {
 body {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    padding-bottom: 10rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: $very-dark-blue;
 }
 
@@ -77,6 +78,12 @@ nav li a {
 .band-left {
     border-radius: 0 0 8rem 0;
     left: -30%;
+}
+
+@media screen and (max-width: 560px){
+    .cd {
+        margin-top: 2rem !important;
+    }
 }
 
 
