@@ -16,50 +16,62 @@
 </head>
 
 <body>
-  <div class="blob"></div>
+  <div class="shape"></div>
   <nav class="navbar">
     <div class="container">
-      <a href="./">
+      <a href="" class="logo">
         <img src="./images/logo.svg" alt="logo">
       </a>
       <ul class="menu">
-        <li>
-          <a href="">product</a>
+        <button class="menu-close" id="menu-close">
+          <img src="./images/icon-close.svg" alt="close">
+        </button>
+        <li class="nav-item">
+          <a href="#">product</a>
         </li>
-        <li>
-          <a href="">features</a>
+        <li class="nav-item">
+          <a href="#">features</a>
         </li>
-        <li>
-          <a href="">pricing</a>
+        <li class="nav-item">
+          <a href="#">pricing</a>
         </li>
-        <li class="nav-disabled">
-          <a href="">login</a>
+        <div class="dot"></div>
+        <li class="nav-item nav-disabled">
+          <a href="#">login</a>
         </li>
       </ul>
-      <button class="hamburger">
-        <img src="./images/icon-hamburger.svg" alt="hamburger">
+      <button id="ham" class="ham">
+        <img src="./images/icon-hamburger.svg" alt="open">
       </button>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="intro">
-      <div class="i1">
-        <button class="btn btn-pill">new</button>
-        <span>monograph dashboard</span>
+
+  <main class="hero">
+    <div class="container">
+      <div class="intro">
+        <div class="upper">
+          <button class="btn btn-pill">new</button>
+          <span>monograph dashboard</span>
+        </div>
+        <h1 class="intro-title">
+          powerful insights into your team
+        </h1>
+        <p>
+          Project planning and time tracking for agile teams
+        </p>
+        <div class="lower">
+          <button class="btn btn-primary">schedule a demo</button>
+          <span>to see a preview</span>
+        </div>
+
       </div>
-      <h1 class="title">
-        powerful insights into your team
-      </h1>
-      <p>Project planning and time tracking for agile teams</p>
-      <div class="i2">
-        <button class="btn btn-primary">schedule a demo</button>
-        <span>to see a preview</span>
+      <div class="image">
+        <img src="./images/illustration-devices.svg" alt="">
       </div>
     </div>
-    <div class="image">
-      <img src="./images/illustration-devices.svg" alt="">
-    </div>
-  </div>
+  </main>
+
+  <script src="./app.js"></script>
 </body>
 
 </html>

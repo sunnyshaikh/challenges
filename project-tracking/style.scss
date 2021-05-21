@@ -1,0 +1,254 @@
+$red: hsl(0, 100%, 68%);
+$very-dark-blue: hsl(230, 29%, 20%);
+$dark-grayish-blue: hsl(230, 11%, 40%);
+$grayish-blue: hsl(231, 7%, 65%);
+$light-grayish-blue: hsl(207, 33%, 95%);
+
+@mixin flexCenterBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46vw;
+    height: 400px;
+    background-color: $light-grayish-blue;
+    border-radius: 0 0 0 74px;
+}
+
+h1, h2, h3, li, button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: $very-dark-blue;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    .menu-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        display: none;
+        transition: .5s ease;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+li {
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+}
+
+li.nav-disabled a {
+    color: $grayish-blue;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: $very-dark-blue;
+}
+
+.btn {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: .7rem 1.1rem;
+    text-transform: uppercase;
+    color: $light-grayish-blue;
+    letter-spacing: .04rem;
+}
+
+.btn-pill {
+    padding: .25rem .5rem;
+    border-radius: 25px;
+    background-color: $very-dark-blue;
+
+}
+
+.btn-primary {
+    border-radius: 4px;
+    background-color: $red;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 2px 12px rgba(0,0,0,.3);
+}
+
+.container {
+    width: 1160px;
+    max-width: 100%;
+    padding: 0 .8rem;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+button.ham {
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: .5s ease;
+    display: none;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+
+/* navbar */
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+
+    .container {
+        @include flexCenterBetween;
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grayish-blue;
+            margin: 0 1.75rem
+        }
+    }
+}
+
+// hero
+.hero {
+    min-height: calc(100vh - 10rem);
+
+    .container {
+        @include flexCenterBetween;
+
+        .intro {
+            .intro-title {
+                font-size: 3.26rem;
+                text-transform: uppercase;
+                margin: 1.4rem 0 2rem 0;
+            }
+            p {
+                color: $dark-grayish-blue;
+                width: 240px;
+            }
+            span {
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                color: $dark-grayish-blue;
+                margin-left: 4%;
+            }
+
+            .lower {
+                margin-top: 2.5rem;
+            }
+        }
+
+        .image img {
+            margin-left: 48%;
+            margin-top: 5rem;
+            width: 100%;
+            object-fit: cover;
+            transform: scale(1.4);
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    button.ham {
+        display: block;
+    }
+
+    ul.menu {
+        position: absolute;
+        top: -150%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,.3);
+        margin-left: 0;
+        transition: .5s ease-out;
+        z-index: 100;
+
+        .menu-close {
+            display: block;
+        }
+
+        .nav-item {
+            margin: .55rem 0
+        }
+    }
+
+    ul.menu.active {
+        top: 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+
+        .intro {
+            padding-bottom: 2rem;
+            margin-top: 5rem;
+            .intro-title {
+                font-size: 2rem;
+            }
+        }
+
+        .image {
+            order: -1;
+
+            img {
+                margin: 0;
+                transform: scale(1);
+            }
+        }
+    }
+}
