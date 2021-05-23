@@ -1,10 +1,8 @@
 const hamEle = document.getElementById('ham')
-// const menuCloseEle = document.getElementById('menu-close')
+const yrEle = document.getElementById('yr')
 
 hamEle.addEventListener('click', () => {
     document.querySelector('ul.menu').classList.toggle('active')
 })
 
-// menuCloseEle.addEventListener('click', () => {
-//     document.querySelector('ul.menu').classList.toggle('active')
-// })
+yrEle.innerText = new Date().getFullYear()
