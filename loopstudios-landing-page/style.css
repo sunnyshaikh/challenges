@@ -211,35 +211,43 @@ img {
 }
 
 .grid-section .container .grids .grid:nth-child(1) {
-  background-image: url(./images/desktop/image-deep-earth.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-deep-earth.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-deep-earth.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(2) {
-  background-image: url(./images/desktop/image-night-arcade.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-night-arcade.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-night-arcade.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(3) {
-  background-image: url(./images/desktop/image-soccer-team.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-soccer-team.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-soccer-team.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(4) {
-  background-image: url(./images/desktop/image-grid.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-grid.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-grid.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(5) {
-  background-image: url(./images/desktop/image-from-above.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-from-above.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-from-above.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(6) {
-  background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-pocket-borealis.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-pocket-borealis.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(7) {
-  background-image: url(./images/desktop/image-curiosity.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-curiosity.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-curiosity.jpg);
 }
 
 .grid-section .container .grids .grid:nth-child(8) {
-  background-image: url(./images/desktop/image-fisheye.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/desktop/image-fisheye.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/desktop/image-fisheye.jpg);
 }
 
 .footer {
@@ -383,22 +391,28 @@ img {
     grid-auto-rows: 150px !important;
   }
   .grid-section .grids .grid:nth-child(1) {
-    background-image: url(./images/mobile/image-deep-earth.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-deep-earth.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-deep-earth.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(2) {
-    background-image: url(./images/mobile/image-night-arcade.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-night-arcade.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-night-arcade.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(3) {
-    background-image: url(./images/mobile/image-soccer-team.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-soccer-team.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-soccer-team.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(4) {
-    background-image: url(./images/mobile/image-grid.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-grid.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-grid.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(5) {
-    background-image: url(./images/mobile/image-from-above.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-from-above.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-from-above.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(6) {
-    background-image: url(./images/mobile/image-pocket-borealis.jpg) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(./images/mobile/image-pocket-borealis.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/mobile/image-pocket-borealis.jpg) !important;
   }
   .grid-section .grids .grid:nth-child(7) {
     background-image: url(./images/mobile/image-curiosity.jpg) !important;
