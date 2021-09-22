@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">spli</br>tter</h1>
+    <div class="content">
+      <div class="value-container">
+        <div class="form-group">
+          <label for="bill-amt">Bill</label>
+          <div class="input-grp">
+            <span><img src="./images/icon-dollar.svg" alt="$"></span>
+            <input type="text" id="bill-amt" class="form-control" placeholder="0.00" oninput="bill(this.value)">
+          </div>
+        </div>
+        <div class="tip-percent">
+          <label>Select Tip %</label>
+          <div class="radio-container">
+            <div class="radio-group">
+              <input type="radio" id="per-5" value="5" name="tip-per" class="per">
+              <label for="per-5" class="label-btn">5%</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="per-10" value="10" name="tip-per" class="per">
+              <label for="per-10" class="label-btn">10%</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="per-15" value="15" name="tip-per" class="per">
+              <label for="per-15" class="label-btn">15%</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="per-25" value="25" name="tip-per" class="per">
+              <label for="per-25" class="label-btn">25%</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="per-50" value="50" name="tip-per" class="per">
+              <label for="per-50" class="label-btn">50%</label>
+            </div>
+            <div class="radio-group">
+              <input type="text" id="custom" placeholder="Custom" class="custom-per" oninput="custom(this.value)">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="person" style="display: flex; justify-content: space-between;">
+            Number of People
+            <p id="np-error" style="color: crimson; text-align: right; display: none;"><small>0 not allowed</small></p>
+          </label>
+          <div class="input-grp">
+            <span><img src="./images/icon-person.svg" alt="$"></span>
+            <input type="text" id="person" class="form-control" placeholder="1" oninput="people(this.value)">
+          </div>
+        </div>
+      </div>
+      <div class="result-container">
+        <form>
+          <div class="form-group-2">
+            <label>
+              <h4>Tip Amount</h4>
+              <p>/ person</p>
+            </label>
+            <input type="text" id="final-tip-total" class="form-control-2" placeholder="$0.00" readonly>
+          </div>
+          <div class="form-group-2">
+            <label>
+              <h4>Total</h4>
+              <p>/ person</p>
+            </label>
+            <input type="text" id="final-bill-total" class="form-control-2" placeholder="$0.00" readonly>
+          </div>
+          <button type="reset" class="btn" id="reset-btn">Reset</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
