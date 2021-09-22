@@ -45,6 +45,7 @@ body {
   margin-top: 4rem;
   padding: 1.75rem;
   display: flex;
+  box-shadow: 0 10px 40px rgba(0,0,0,.12);
 }
 
 .form-group {
