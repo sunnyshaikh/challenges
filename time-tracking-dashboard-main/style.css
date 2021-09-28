@@ -1,0 +1,176 @@
+:root {
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background: var(--Very-dark-blue);
+  display: flex;
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  width: 1160px;
+  max-width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--Dark-blue);
+}
+
+.info {
+  background: var(--Blue);
+  border-radius: 16px;
+  padding: 1.75rem;
+  padding-bottom: 4rem;
+}
+
+.report {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-weight: 300;
+  margin-top: .75rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.freq {
+  padding: 1.75rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+li {
+  padding: 0.75rem 0;
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+  transition: .25s ease;
+}
+
+li.active {
+  color: #fff;
+}
+
+
+/*  */
+
+.tracker {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card.work {
+  background: var(--Light-red-work);
+}
+
+.card.play {
+  background: var(--Soft-blue-play);
+}
+
+.card.study {
+  background: var(--Light-red-study);
+}
+
+.card.exercise {
+  background: var(--Lime-green-exercise);
+}
+
+.card.social {
+  background: var(--Violet-social);
+}
+
+.card.self-care {
+  background: var(--Soft-orange-self-care);
+}
+
+.card img {
+  position: absolute;
+  right: 1rem;
+}
+
+.count {
+  position: absolute;
+  background: var(--Dark-blue);
+  border-radius: 1rem;
+  z-index: 2;
+  height: 80%;
+  width: 100%;
+  bottom: 0rem;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.count .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count .header h2{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.count .body {
+  margin-top: 1.75rem;
+}
+
+.count .body h2{
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+
+.count .body p {
+  color: var(--Desaturated-blue);
+  margin-top: .5rem;
+}

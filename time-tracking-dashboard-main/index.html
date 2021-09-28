@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="info">
+        <div class="avatar">
+          <img src="./images/image-jeremy.png" alt="Jeremy">
+        </div>
+        <div class="report">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="freq">
+        <ul>
+          <li class="nav active">Daily</li>
+          <li class="nav">Weekly</li>
+          <li class="nav">Monthly</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tracker">
+      <div class="card work">
+        <img src="./images/icon-work.svg" alt="work">
+        <div class="count">
+          <div class="header">
+            <h2>Work</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">32hrs</h2>
+            <div class="duration">
+              <p>Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card play">
+        <img src="./images/icon-play.svg" alt="play">
+        <div class="count">
+          <div class="header">
+            <h2>Play</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">10hrs</h2>
+            <div class="duration">
+              <p>Last week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card study">
+        <img src="./images/icon-study.svg" alt="study">
+        <div class="count">
+          <div class="header">
+            <h2>Study</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">4hrs</h2>
+            <div class="duration">
+              <p>Last week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card exercise">
+        <img src="./images/icon-exercise.svg" alt="exercise">
+        <div class="count">
+          <div class="header">
+            <h2>Exercise</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">4hrs</h2>
+            <div class="duration">
+              <p>Last week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card social">
+        <img src="./images/icon-social.svg" alt="social">
+        <div class="count">
+          <div class="header">
+            <h2>Social</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">5hrs</h2>
+            <div class="duration">
+              <p>Last week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card self-care">
+        <img src="./images/icon-self-care.svg" alt="self-care">
+        <div class="count">
+          <div class="header">
+            <h2>Self care</h2>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="body">
+            <h2 class="time">2hrs</h2>
+            <div class="duration">
+              <p>Last week - 3hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
