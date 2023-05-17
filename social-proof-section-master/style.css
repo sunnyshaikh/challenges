@@ -98,11 +98,11 @@ body {
 }
 
 .card:nth-child(2) {
-  margin-top: 1rem;
+  transform: translateY(1rem);
 }
 
 .card:last-child {
-  margin-top: 2rem;
+  transform: translateY(2rem);
 }
 
 .profile {
@@ -129,4 +129,31 @@ body {
 blockquote {
   margin-top: 2rem;
   line-height: 1.5;
+}
+
+
+@media screen and (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .top>div {
+    width: 100%;
+  }
+
+  .rating {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .text-area h1,
+  .text-area p {
+    width: 100%;
+  }
+
+  .card {
+    transform: translateY(0) !important;
+    background: #000;
+  }
 }
